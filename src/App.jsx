@@ -8,7 +8,7 @@ import Home from "./components/Home"
 function App() {
  
   return (
-    <div className="bg-[#F7F8F9] min-h-[100vh] font-rubik ">
+    <div className="bg-[#F7F8F9] w-[375px] h-[812px] font-rubik mx-auto ">
     <Routes>
       <Route path="/login" element={<LoginForm/>} />
       <Route path="/signup" element={<SignupForm/>} />

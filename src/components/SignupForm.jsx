@@ -29,14 +29,16 @@ const SignupForm = () => {
     });
   };
   return (
-    <div className="pt-[40px] pl-[20px] ">
-      <div className="text-[36px] font-rubik font-[600] " >Create your
-      <br/> PopX account</div>
+    <div className="pt-[40px] pl-[20px] pr-[20px] ">
+      <div className="text-[36px] font-rubik font-[600] ">
+        Create your
+        <br /> PopX account
+      </div>
       <form onSubmit={handleOnSubmit} className="flex flex-col pt-8">
         <label className="realtive mb-8">
-          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#6C25FF] absolute top-[170px] left-8 bg-[#F7F8F9] pl-1 pr-4 ">
+          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#6C25FF] absolute top-[170px] left-[600px] bg-[#F7F8F9] pl-1 pr-4 ">
             Full Name
-            <sup className="text-[#DD4A3D] w-[6px] h-[15px] p-0 ">*</sup>
+            <sup className="text-[#DD4A3D] w-[6px] h-[15px]">*</sup>
           </p>
           <input
             required
@@ -45,14 +47,13 @@ const SignupForm = () => {
             value={fullName}
             onChange={handleOnChange}
             placeholder="Marry Doe"
-            className="w-full rounded-[0.38rem] bg-[#F7F8F9] text-black p-[12px] border-[1px] border-[#CBCBCB] border-solid "
+            className="w-full rounded-[0.38rem] bg-[#F7F8F9] placeholder-black p-[12px] border-[1px] border-[#CBCBCB] border-solid "
           />
         </label>
-      
 
         <label className="relative mb-8">
-          <p className="absolute -top-3 left-2 bg-[#F7F8F9] pl-1 pr-4 ">
-            Phone number<sup className="text-pink-200">*</sup>
+          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#6C25FF] absolute -top-3 left-2 bg-[#F7F8F9] pl-1  ">
+            Phone number<sup className="text-[#DD4A3D] w-[6px] h-[15px]">*</sup>
           </p>
           <input
             required
@@ -61,12 +62,13 @@ const SignupForm = () => {
             value={phone}
             onChange={handleOnChange}
             placeholder="Marry Doe"
-            className="w-full rounded-[0.38rem] bg-[#F7F8F9] p-[12px] border-[1px] border-[#CBCBCB] border-solid "
+            className="w-full rounded-[0.38rem] bg-[#F7F8F9] p-[12px] border-[1px] border-[#CBCBCB] border-solid placeholder-black "
           />
         </label>
         <label className="relative mb-8">
-          <p className="absolute -top-3 left-2 bg-[#F7F8F9] pl-1 pr-4 ">
-            Email address<sup className="text-pink-200">*</sup>
+          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#6C25FF] absolute -top-3 left-2 bg-[#F7F8F9] pl-1  ">
+            Email address
+            <sup className="text-[#DD4A3D] w-[6px] h-[15px]">*</sup>
           </p>
           <input
             required
@@ -75,13 +77,13 @@ const SignupForm = () => {
             value={email}
             onChange={handleOnChange}
             placeholder="Marry Doe"
-            className="w-full rounded-[0.38rem] bg-[#F7F8F9] p-[12px] border-[1px] border-[#CBCBCB] border-solid "
+            className="w-full rounded-[0.38rem] bg-[#F7F8F9] p-[12px] border-[1px] border-[#CBCBCB] border-solid  placeholder-black "
           />
         </label>
 
         <label className="relative mb-8">
-          <p className="absolute -top-3 left-2 bg-[#F7F8F9] pl-1 pr-4 ">
-            Password<sup className="text-pink-200">*</sup>
+          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#6C25FF] absolute -top-3 left-2 bg-[#F7F8F9] pl-1 pr-6 ">
+            Password<sup className="text-[#DD4A3D] w-[6px] h-[15px]">*</sup>
           </p>
           <input
             required
@@ -90,11 +92,11 @@ const SignupForm = () => {
             value={password}
             onChange={handleOnChange}
             placeholder="Marry Doe"
-            className="w-full rounded-[0.38rem] bg-[#F7F8F9] p-[12px] border-[1px] border-[#CBCBCB] border-solid "
+            className="w-full rounded-[0.38rem] bg-[#F7F8F9] p-[12px] border-[1px] border-[#CBCBCB] border-solid  placeholder-black"
           />
         </label>
         <label className="relative mb-8">
-          <p className="absolute -top-3 left-2 bg-[#F7F8F9] pl-1 pr-4">
+          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#6C25FF] absolute -top-3 left-2 bg-[#F7F8F9] pl-1 ">
             Company name
           </p>
           <input
@@ -104,30 +106,42 @@ const SignupForm = () => {
             value={company}
             onChange={handleOnChange}
             placeholder="Marry Doe"
-            className="w-full rounded-[0.38rem] bg-[#F7F8F9] p-[12px] border-[1px] border-[#CBCBCB] border-solid "
+            className="w-full rounded-[0.38rem] bg-[#F7F8F9] p-[12px] border-[1px] border-[#CBCBCB] border-solid  placeholder-black "
           />
         </label>
         <div>
-          <p>
-            Are you an Agency?<span>*</span>
+          <p className="mb-2">
+            Are you an Agency?
+            <span className="text-[#DD4A3D] w-[6px] h-[15px]">*</span>
           </p>
 
+         <div className="flex gap-x-4">
+          <label className="flex justify-center gap-x-2"> 
           <input
             type="radio"
             name="agency"
             value="yes"
+            checked
             onChange={handleOnChange}
+            className="h-[22px] w-[22px] text-[#6C25FF] "
           />
+          <span>Yes</span>
+          </label>
 
-          <label htmlFor="agency">Yes</label>
-          <input
+          
+          <label className="flex justify-center gap-x-2" >
+            <input
             type="radio"
             name="agency"
             value="no"
             onChange={handleOnChange}
+            className="h-[22px] w-[22px] "
           />
+          <span>No</span>
+          </label>
+          </div>
 
-          <label htmlFor="pushEverything">No</label>
+
         </div>
 
         <button
