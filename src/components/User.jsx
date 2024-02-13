@@ -5,7 +5,7 @@ import camera from "../assets/Group 1585.svg";
 const User = () => {
   return (
     <div>
-      <div className="text-[#1D2226] h-[68px] min-w-[100vw] bg-[#FFFFFF] pt-[27px] pl-[15px] text-[18px] font-normal">
+      <div className="text-[#1D2226] h-[68px]  bg-[#FFFFFF] pt-[27px] pl-[15px] text-[18px] font-normal">
         Account Settings
       </div>
       <div className="flex pt-[30px] pl-[20px] gap-x-[20px] ">
@@ -23,7 +23,7 @@ const User = () => {
         Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
       </div>
       <div className=" border-b-[1px] border-dashed border-[#CBCBCB] "></div>
-      <div className=" mt-[450px]  border-b-[1px] border-dashed border-[#CBCBCB] "></div>
+      <div className=" mt-[450px] border-b-[1px] border-dashed border-[#CBCBCB] "></div>
     </div>
   );
 };

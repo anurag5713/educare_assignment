@@ -115,33 +115,30 @@ const SignupForm = () => {
             <span className="text-[#DD4A3D] w-[6px] h-[15px]">*</span>
           </p>
 
-         <div className="flex gap-x-4">
-          <label className="flex justify-center gap-x-2"> 
-          <input
-            type="radio"
-            name="agency"
-            value="yes"
-            checked
-            onChange={handleOnChange}
-            className="h-[22px] w-[22px] text-[#6C25FF] "
-          />
-          <span>Yes</span>
-          </label>
+          <div className="flex gap-x-4">
+            <label className="flex justify-center gap-x-2">
+              <input
+                type="radio"
+                name="agency"
+                value="yes"
+                checked
+                onChange={handleOnChange}
+                className="h-[22px] w-[22px] text-[#6C25FF] "
+              />
+              <span>Yes</span>
+            </label>
 
-          
-          <label className="flex justify-center gap-x-2" >
-            <input
-            type="radio"
-            name="agency"
-            value="no"
-            onChange={handleOnChange}
-            className="h-[22px] w-[22px] "
-          />
-          <span>No</span>
-          </label>
+            <label className="flex justify-center gap-x-2">
+              <input
+                type="radio"
+                name="agency"
+                value="no"
+                onChange={handleOnChange}
+                className="h-[22px] w-[22px] "
+              />
+              <span>No</span>
+            </label>
           </div>
-
-
         </div>
 
         <button
